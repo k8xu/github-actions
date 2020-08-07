@@ -1,6 +1,6 @@
 # This workflow will install dependencies and lint code with Black and flake8 using Python 3.8
 
-name: Action
+name: Lint
 
 on:
   push:
@@ -15,10 +15,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Set up Python 3.7
+    - name: Set up Python 3.8
       uses: actions/setup-Python@v2
       with:
-        python-version: 3.7
+        python-version: 3.8
 
     - name: Install dependencies
       run: |
